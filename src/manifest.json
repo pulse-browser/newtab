@@ -1,34 +1,28 @@
 {
-
-    "manifest_version": 2,
-    "name": "Focus NewTab",
-    "version": "1.0",
-    "applications": {
-      "gecko": {
-        "id": "newtab@browser.fushra.com"
-      }
-    },
-  
-    "description": "Adds a custom new-tab to focus browser.",
-  
-    "icons": {
-      "48": "icons/focus-48.png"
-    },
-
-    "permissions": [
-        "topSites",
-        "search",
-        "tabs"
-      ],
-
-    "content_security_policy": "script-src 'self'; object-src 'self'",
-
-    "chrome_url_overrides": {
-      "newtab": "index.html"
-    },
-
-    "chrome_settings_overrides": {
-      "homepage": "index.html"
+  "manifest_version": 2,
+  "name": "Focus NewTab",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "id": "newtab@browser.fushra.com"
     }
-  
+  },
+
+  "description": "Adds a custom new-tab to focus browser.",
+
+  "icons": {
+    "48": "icons/focus-48.png"
+  },
+
+  "permissions": ["topSites", "search", "tabs"],
+
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+
+  "chrome_settings_overrides": {
+    "homepage": "index.html"
   }
+}
