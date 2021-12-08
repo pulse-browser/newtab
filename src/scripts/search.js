@@ -1,30 +1,26 @@
-const button = document.getElementById('search')
 const searchBox = document.getElementById('searchbox')
 const searchInput = document.getElementById('searchInput')
 
 searchBox.addEventListener('click', (e) => searchInput.focus())
 
-button.addEventListener('click', () => {
-  if (document.getElementById('searchInput').value != '') {
+document.addEventListener('keydown', (e) => {
+  if (
+    e.key === 'Enter' &&
+    document.activeElement.id === 'searchInput' &&
+    document.activeElement.value !== ''
+  ) {
     search()
   }
 })
 
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter' && document.activeElement.id === 'searchInput' && document.activeElement.value !== '') {
-    search()
-  }
-})
+const getCurrent = async () => (await browser.tabs.getCurrent()).id
 
 async function search() {
-  var tabID = await getCurrent()
-  var search_input = document.getElementById('searchInput').value
-  browser.search.search({
-    query: search_input,
-    tabId: tabID,
-  })
-}
+  const tabId = await getCurrent()
+  const query = searchInput.value
 
-async function getCurrent() {
-  return (await browser.tabs.getCurrent()).id
+  browser.search.search({
+    query,
+    tabId,
+  })
 }
