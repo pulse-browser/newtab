@@ -26,6 +26,12 @@ body {
   width: 100%;
 }
 
+#searchbox:focus-within {
+  border-color: transparent;
+  outline: 2px solid var(--in-content-focus-outline-color);
+  outline-offset: -1px;
+}
+
 #searchbox img {
   color: var(--in-content-text-color);
   stroke: var(--in-content-text-color);
@@ -38,4 +44,8 @@ body {
 
 #searchInput {
   border: none;
+}
+
+#searchInput:focus {
+  outline: none;
 }
