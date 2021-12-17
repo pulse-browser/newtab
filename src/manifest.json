@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Focus NewTab",
-  "version": "1.0",
+  "version": "1.0.0-a.4",
   "applications": {
     "gecko": {
       "id": "newtab@browser.fushra.com"
