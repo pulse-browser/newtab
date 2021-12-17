@@ -1,0 +1,1 @@
+zip -9 -r -q ./newtab.zip ./src/*
