@@ -1,3 +1,7 @@
+:root {
+  --card-hover: rgba(127, 127, 127, 0.2);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -44,8 +48,65 @@ body {
 
 #searchInput {
   border: none;
+  width: 100%;
 }
 
 #searchInput:focus {
   outline: none;
+}
+
+#topSitesContainer {
+  display: flex;
+  padding-top: 32px;
+  gap: 16px;
+}
+
+.favicon {
+  background: var(--in-content-box-background);
+  width: 48px;
+  padding: 16px;
+  border-radius: var(--border-radius-1);
+
+  box-shadow: var(--card-shadow);
+}
+
+.cardContainer {
+  background-color: transparent;
+  width: 120px;
+  padding-top: 16px;
+  border-radius: var(--border-radius-1);
+  overflow: hidden;
+}
+
+.cardContainer:hover {
+  background-color: var(--card-hover);
+}
+
+.title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  padding-top: 8px;
+  font: caption;
+}
+
+@media (max-width: 1084px) and (min-width: 800px) {
+  #topSitesContainer > .cardContainer:nth-child(6) ~ .cardContainer {
+    /* this rule targets the rows after the 3rd .row */
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  #topSitesContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 530px) {
+  #topSitesContainer > .cardContainer:nth-child(6) ~ .cardContainer {
+    /* this rule targets the rows after the 3rd .row */
+    display: none;
+  }
 }

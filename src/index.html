@@ -3,16 +3,26 @@
     <meta charset="utf-8" />
     <title>New Tab</title>
     <link rel="stylesheet" href="style/main.css" />
-    <link rel="stylesheet" media="screen and (pointer:fine), projection" type="text/css" href="chrome://global/skin/in-content/common.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (pointer:fine), projection"
+      type="text/css"
+      href="chrome://global/skin/in-content/common.css"
+    />
   </head>
   <body>
     <div class="content">
       <h1 class="text-3xl">SHHH</h1>
 
       <div id="searchbox">
-        <img src="chrome://global/skin/icons/search-glass.svg" alt="Search Icon" />
+        <img
+          src="chrome://global/skin/icons/search-glass.svg"
+          alt="Search Icon"
+        />
         <input type="text" placeholder="Search" id="searchInput" />
       </div>
+
+      <div id="topSitesContainer"></div>
     </div>
 
     <script type="module" src="/scripts/search.js"></script>
