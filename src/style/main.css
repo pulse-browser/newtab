@@ -90,6 +90,15 @@ body {
   font: caption;
 }
 
+.logo {
+  padding: 30;
+}
+
+.search-icon {
+  -moz-context-properties: fill;
+  fill: white;
+}
+
 @media (max-width: 1084px) and (min-width: 800px) {
   #topSitesContainer > .cardContainer:nth-child(6) ~ .cardContainer {
     /* this rule targets the rows after the 3rd .row */
