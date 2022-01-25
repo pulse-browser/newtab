@@ -1,0 +1,14 @@
+{
+  "searchBoxIcon": {
+    "message": "Search Icon",
+    "description": "Name of the icon next to the search box"
+  },
+  "searchBoxPlaceholder": {
+    "message": "Search",
+    "description": "Placeholder text in the search box"
+  },
+  "pageTitle": {
+    "message": "New Tab",
+    "description": "Title of the new tab page"
+  }
+}

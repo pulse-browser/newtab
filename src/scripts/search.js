@@ -1,3 +1,6 @@
+//@ts-check
+/// <reference types="web-ext-types"/>
+
 const defaultTopSites = [
   {
     favicon: 'https://avatars.githubusercontent.com/u/83148990?s=200&v=4',

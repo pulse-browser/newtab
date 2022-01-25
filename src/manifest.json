@@ -24,5 +24,7 @@
 
   "chrome_settings_overrides": {
     "homepage": "index.html"
-  }
+  },
+
+  "default_locale": "en"
 }

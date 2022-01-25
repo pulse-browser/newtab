@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>New Tab</title>
+    <title data-l10n-id="pageTitle">New Tab</title>
     <link rel="stylesheet" href="style/main.css" />
     <link
       rel="stylesheet"
@@ -13,21 +13,34 @@
   <body>
     <div class="content">
       <div id="logo" class="logo">
-        <img src="chrome://branding/content/about-logo.png" height="110" width="110">
+        <img
+          src="chrome://branding/content/about-logo.png"
+          height="110"
+          width="110"
+        />
       </div>
-      
+
       <div id="searchbox">
         <img
           src="chrome://global/skin/icons/search-glass.svg"
+          data-l10n-id="searchBoxIcon"
+          data-l10n-atr="alt"
           alt="Search Icon"
           class="search-icon"
         />
-        <input type="text" placeholder="Search" id="searchInput" />
+        <input
+          type="text"
+          placeholder="Search"
+          id="searchInput"
+          data-l10n-id="searchBoxInput"
+          data-l10n-atr="placeholder"
+        />
       </div>
 
       <div id="topSitesContainer"></div>
     </div>
 
     <script type="module" src="/scripts/search.js"></script>
+    <script src="/scripts/i10n.js"></script>
   </body>
 </html>
