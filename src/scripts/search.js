@@ -8,6 +8,11 @@ const defaultTopSites = [
     url: 'https://fushra.com',
   },
   {
+    favicon: 'https://raw.githubusercontent.com/pulse-browser/assets/main/pulse-logo.png',
+    title: 'Pulse Browser',
+    url: 'https://pulsebrowser.app/',
+  },
+  {
     favicon: 'https://duckduckgo.com/assets/common/dax-logo.svg',
     title: 'DuckDuckGo',
     url: 'https://duckduckgo.com/about',
@@ -32,12 +37,6 @@ const defaultTopSites = [
     favicon: 'https://www.redditinc.com/assets/images/site/logo01.svg',
     title: 'Libreddit',
     url: 'https://libredd.it/',
-  },
-  {
-    favicon:
-      'https://spee.ch/9/45245681a50082f7.jpg?quality=85&height=200&width=0',
-    title: 'Odysee',
-    url: 'https://odysee.com/',
   },
 ]
 
